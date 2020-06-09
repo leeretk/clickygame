@@ -20,14 +20,6 @@ For this assignment, you'll create a memory game with React. This assignment wil
 
 7. When complete, the application should be deployed to Github Pages. See the README generated with Create React App for instructions on deploying the application to Github Pages.
 
-- - -
-
-#### Minimum Requirements
-
-* **This assignment must be deployed.** Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed. Hosting on Github Pages and adding a README.md are required for this homework. In addition, add this homework to your portfolio. More information can be found below.
-
-- - -
-
 #### Hints
 
 * Begin by building a non-functioning static version for your Clicky Game. Then work on making the game interactive.
