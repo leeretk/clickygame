@@ -78,22 +78,15 @@ class App extends React.Component {
 
     <div className="container">
      <Title>INCONCEIVABLE
-      
         <Nav>      
-        <p>
-        <span > Princess Bride Clicky Game!&nbsp;</span>         
-        {"       "}&nbsp;
-        <span >Score: {this.state.myscore}&nbsp;</span>
-        {"       "}&nbsp;
+        <p><span > Princess Bride Clicky Game!&nbsp;</span></p>
+        <p><span >Score: {this.state.myscore}&nbsp;</span>{"       "}&nbsp;
         <span >HighScore: {this.state.highscore}&nbsp;</span> 
         </p>
-        <p>
         <Alert>Message Here</Alert>
-        </p>
       </Nav>
-      
       </Title>
-      <Wrapper>       
+      <Wrapper>
         {this.state.friends.map(friend => (
           <FriendCard
             handleClick={this.handleClick}

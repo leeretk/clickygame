@@ -2,7 +2,7 @@
   background: #fff;
   border-radius: 2px;
   height: 325px;
-  margin: 5px;
+  margin: 10px;
   position: relative;
   width: 325px;
   box-shadow: 0 20px 40px black;
@@ -26,4 +26,5 @@
 }
 .card > .content > ul {
   list-style-type: none;
+  list-style: none;
 }
