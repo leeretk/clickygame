@@ -3,6 +3,7 @@ import FriendCard from "./components/FriendCard/FriendCard";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Title from "./components/Title/Title";
 import Nav from "./components/Nav/Nav";
+import Alert from "./components/Alerts/Alert";
 import friends from "./friends.json";
 
 class App extends React.Component {
@@ -77,15 +78,21 @@ class App extends React.Component {
 
     <div className="container">
      <Title>INCONCEIVABLE
+      
         <Nav>      
-        <span >Clicky Game!&nbsp;</span>         
+        <p>
+        <span > Princess Bride Clicky Game!&nbsp;</span>         
         {"       "}&nbsp;
         <span >Score: {this.state.myscore}&nbsp;</span>
         {"       "}&nbsp;
         <span >HighScore: {this.state.highscore}&nbsp;</span> 
-      </Nav>      
-      </Title>
+        </p>
+        <p>
+        <Alert>Message Here</Alert>
+        </p>
+      </Nav>
       
+      </Title>
       <Wrapper>       
         {this.state.friends.map(friend => (
           <FriendCard
