@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import ReactDom from "react-dom";
+import React from "react";
 import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
+// import Alerts from "./components/Alerts";
 import friends from "./friends.json";
-import Score from "./components/Score";
-
+import Counter from "./components/Counter";
+import './App.css';
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
@@ -19,9 +19,9 @@ class App extends Component {
     this.setState({ friends: this.shuffleFriends(this.state.friends)});
   };
   
-  reShuffle = friendData => {
-    const reShuffle = friendData.map(friends => ({...friends, clicked: false}));
-    return this.shuffleFriends(reShuffle);
+  resetFriend = data => {
+    const resetFriend = data.map(friends => ({...friends, clicked: false}));
+    return this.shuffleFriends(resetFriend);
   };
 
   shuffleFriends = friends => {
@@ -29,7 +29,7 @@ class App extends Component {
     while (i > 0) {
       const j = Math.floor(Math.random() * (i + 1));
       const temp = friends[i];
-      friends[i] = friends[j];
+      friends[i] - friends[j];
       friends[j] = temp;
       i--;
     }
@@ -38,36 +38,38 @@ class App extends Component {
 
   handleClick = id => {
     let guessCorrect = false;
-
     const newClick = this.state.friends.map(friends => {
-       const newFriend = { ...friends };
+      const newFriend = { ...friends };
       if (newFriend.id === id) {
-        if (!newFriend.clicked) {  //newFreind ID not clicked. 
+        if (!newFriend.clicked) {
           newFriend.clicked = true;
           guessCorrect = true;
         }
       }
       return newFriend;
     });
+    guessCorrect
+      ? this.handleCorrect(newClick)
+      : this.handleIncorrect(newClick);
   };
 
-  handleCorrect = newFriendData => {
+  handleCorrect = newData => {
     console.log("Correct Click");
     const { topScore, count } = this.state;
     const newScore = count + 1;
     const newTopScore = Math.max(newScore, topScore);
 
     this.setState({
-        friends: this.shuffleFriends(newFriendData),
+        friends: this.shuffleFriends(newData),
         count: newScore,
         topScore: newTopScore
     });
 };
 
- handleIncorrect = friendData => {
+ handleIncorrect = data => {
   console.log("Incorrect click");
     this.setState({
-        friends: this.resetData(friendData),
+        friends: this.resetData(data),
         count: 0
     });
 };
@@ -81,7 +83,7 @@ class App extends Component {
 
       <Wrapper>       
         <Title>Friends List</Title>      
-        {/* <Score />; */}
+        <Counter />;
         {this.state.friends.map(friend => (
           <FriendCard
             handleClick={this.handleClick}
