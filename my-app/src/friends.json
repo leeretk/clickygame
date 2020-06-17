@@ -2,73 +2,73 @@
   {
     "id": 1,
     "name": "Buttercup",
-    "image": "https://www.bustle.com/p/how-princess-buttercup-in-the-princess-bride-is-secretly-feminist-even-though-shes-a-damsel-2375145",
+    "image": "./buttercup.PNG",
     "clicked": false
   },
   {
     "id": 2,
     "name": "Inigo Montoya",
-    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.heraldextra.com%2Fnews%2Flocal%2Fprincess-bride-participation-coming-to-the-covey-center-in-rocky%2Farticle_f5ec1856-317d-5aca-b0d3-e77bf8134bac.html&psig=AOvVaw1kHxC9Mt0abAnm2vuxe9Ka&ust=1592432853230000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjypOywh-oCFQAAAAAdAAAAABAo",
+    "image": "./iniomontoya.PNG",
     "clicked": false
   },
   {
     "id": 3,
     "name": "Miracle Max",
-    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.es%2Fpin%2F522910206709389502%2F&psig=AOvVaw1kHxC9Mt0abAnm2vuxe9Ka&ust=1592432853230000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjypOywh-oCFQAAAAAdAAAAABBW",
+    "image": "./miraclemax.PNG",
     "clicked": false
   },
   {
     "id": 4,
     "name": "Vizzini",
-    "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia2.giphy.com%2Fmedia%2FJRF85A7Bcl2YU%2Fgiphy.gif&imgrefurl=https%3A%2F%2Fgiphy.com%2Fexplore%2Fprincess-bride&tbnid=pjq-rjwgm6e-EM&vet=12ahUKEwi4ttGYsofqAhUJYK0KHRwIAfoQMygAegUIARDoAQ..i&docid=D6MK3Dc6Zk9VCM&w=480&h=236&q=the%20princess%20bride%20giphy&hl=en&ved=2ahUKEwi4ttGYsofqAhUJYK0KHRwIAfoQMygAegUIARDoAQ", 
+    "image": "./vizzini.PNG", 
     "clicked": false
   },
   {
     "id": 5,
     "name": "Fezzik",
-    "image": "https://www.google.com/search?rlz=1C1CHBF_enUS700US704&sxsrf=ALeKk0093d4tbFnn8Vy7pI6CRic20zcAkw:1592345633538&q=Fezzik&stick=H4sIAAAAAAAAAONgFuLQz9U3MM_LM1DiArGM8soLjeO1JLKTrfTTMnNywYRVckZiUWJySWpR8SPGYG6Blz_uCUt5TVpz8hqjCxdOpUIqXGyueSWZJZVCUlw8UnCLNBikuLjgPCsmDSaeRaxsbqlVVZnZE9gYAWH5zjaUAAAA&sa=X&ved=2ahUKEwjO1uLerYfqAhWUHc0KHbvECEgQ-BYwNnoECCQQNw", 
+    "image": "./fezzik.PNG", 
     "clicked": false
   },
   {
     "id": 6,
     "name": "Count Rugen",
-    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDqXGS_AlsYw&psig=AOvVaw1kHxC9Mt0abAnm2vuxe9Ka&ust=1592432853230000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjypOywh-oCFQAAAAAdAAAAABAP", 
+    "image": "./thecount.PNG", 
     "clicked": false
   },
   {
     "id": 7,
     "name": "The Clergyman",
-    "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ff6%2Fc7%2Fc5%2Ff6c7c5bc3a0f56c75fc026421e9653fc.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F141159769542570630%2F&tbnid=GHocqffXCH76eM&vet=10CAkQxiAoAWoXChMIuPKk7LCH6gIVAAAAAB0AAAAAEAw..i&docid=Z0arw5ZosIvrZM&w=640&h=349&itg=1&q=the%20princess%20bride%20characters&hl=en&ved=0CAkQxiAoAWoXChMIuPKk7LCH6gIVAAAAAB0AAAAAEAw", 
+    "image": "./theclergyman.PNG", 
     "clicked": false
   },
   {
     "id": 8,
     "name": "The Albino",
-    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fgunaxin.com%2Fwhos-the-best-princess-bride-character&psig=AOvVaw1kHxC9Mt0abAnm2vuxe9Ka&ust=1592432853230000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjypOywh-oCFQAAAAAdAAAAABAD", 
+    "image": "./thealbino.PNG", 
     "clicked": false
   },
   {
     "id": 9,
     "name": "Westly",
-    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.giantbomb.com%2Fdread-pirate-roberts%2F3005-32994%2Fimages%2F&psig=AOvVaw1kHxC9Mt0abAnm2vuxe9Ka&ust=1592432853230000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjypOywh-oCFQAAAAAdAAAAABBD", 
+    "image": "./westley.PNG", 
     "clicked": false
   },
   {
     "id": 10,
     "name": "Prince Humperdinck",
-    "image": "", 
+    "image": "./princehumperdinck.PNG", 
     "clicked": false
   },
   {
     "id": 11,
     "name": "Valerie",
-    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.themakeupgallery.info%2Fage%2F1980s%2Fprincess.htm&psig=AOvVaw2zc3LMObVrt4EfsJNZhKQa&ust=1592432569477000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiSv-Gvh-oCFQAAAAAdAAAAABAD", 
+    "image": "./valerie.PNG", 
     "clicked": false
   },
   {
     "id": 12,
     "name": "Yellin",
-    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fvillains.fandom.com%2Fwiki%2FYellin&psig=AOvVaw1kHxC9Mt0abAnm2vuxe9Ka&ust=1592432853230000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjypOywh-oCFQAAAAAdAAAAABBh",
+    "image": "./yellin.PNG",
     "clicked": false
   }
 ]

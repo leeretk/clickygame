@@ -34,11 +34,8 @@ class App extends React.Component {
 
   handleClick = id => {
     let correctGuess = false;
-
     const newClick = this.state.friends.map(friends => {
-      
       const newFriend = { ...friends };
-
       if (newFriend.id === id) {
         if (!newFriend.clicked) {
           newFriend.clicked = true;
@@ -77,11 +74,13 @@ class App extends React.Component {
   render() {
     return (
 
-      <div>
-        Score: {this.state.myscore}
-        HighScore: {this.state.highscore}
+    <div className="container">
+      <Title>
+          Score: {this.state.myscore} 
+          HighScore: {this.state.highscore}
+      </Title>
+
       <Wrapper>       
-        <Title>Friends List</Title>      
         {this.state.friends.map(friend => (
           <FriendCard
             handleClick={this.handleClick}

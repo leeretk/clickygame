@@ -24,6 +24,12 @@ html, body, #root {
 }
 
 img {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
+}
+
+body {
+  background-image: url(/my-app/public/scenery.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
