@@ -3,7 +3,7 @@
   text-align: center;
   padding-top: 15px;
   font-size: 150px;
-  color: white;
+  color: lightgoldenrodyellow;
   align-content: flex-start;
   background-color: goldenrod;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -16,11 +16,9 @@ img{
 .subtitle {
   width: 100%;
   text-align: center;
-  padding-top: 15px;
   font-size: 25px;
   color: white;
   align-content: flex-start;
   background-color: goldenrod;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
 }
