@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import Score from "./components/Score";
+import React from "react";
 import "./style.css";
 
 // Alert renders an li tag containing an message for the user
@@ -12,7 +11,6 @@ class Alert extends Component {
 
     componentDidUpdate({ myScore, highScore }, prevState) {
         
-
         if (myScore === 0 && highScore === 0) {
             this.message = "";
         } else if (myScore === 0 && highScore > 0) {
@@ -53,5 +51,6 @@ class Alert extends Component {
         );
     }
 }
+
 
 export default Alert;

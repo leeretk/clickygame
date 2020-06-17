@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import ReactDom from "react-dom";
 import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import friends from "./friends.json";
 import Score from "./components/Score";
-
+import Alert from "./components/Alert";
+import friends from "./friends.json";
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
@@ -37,37 +36,38 @@ class App extends Component {
   }
 
   handleClick = id => {
-    let guessCorrect = false;
-
+    let correctGuess = false;
     const newClick = this.state.friends.map(friends => {
-       const newFriend = { ...friends };
+      const newFriend = { ...friends };
       if (newFriend.id === id) {
-        if (!newFriend.clicked) {  //newFreind ID not clicked. 
+        if (!newFriend.clicked) {
           newFriend.clicked = true;
-          guessCorrect = true;
+          correctGuess = true;
         }
       }
       return newFriend;
     });
+    correctGuess
+      ? this.handleCorrect(newClick)
+      : this.handleIncorrect(newClick);
   };
-
-  handleCorrect = newFriendData => {
+  handleCorrect = newData => {
     console.log("Correct Click");
-    const { topScore, count } = this.state;
-    const newScore = count + 1;
-    const newTopScore = Math.max(newScore, topScore);
+    const { highScore, count } = this.state;
+    const myNewScore = count + 1;
+    const newHighScore = Math.max(myNewScore, highScore);
 
     this.setState({
-        friends: this.shuffleFriends(newFriendData),
-        count: newScore,
-        topScore: newTopScore
+        friends: this.shuffleFriends(newData),
+        count: myNewScore,
+        highScore: newHighScore
     });
 };
 
- handleIncorrect = friendData => {
+handleIncorrect = data => {
   console.log("Incorrect click");
     this.setState({
-        friends: this.resetData(friendData),
+        friends: this.resetData(data),
         count: 0
     });
 };
@@ -77,11 +77,12 @@ class App extends Component {
     return (
 
       <div>
-    <nav myScore={this.state.count} highScore={this.state.highScore} />
+        <nav myScore={this.state.myScore} highScore={this.state.highScore} />
 
       <Wrapper>       
         <Title>Friends List</Title>      
-        {/* <Score />; */}
+        <Score />;
+        <Alert />; 
         {this.state.friends.map(friend => (
           <FriendCard
             handleClick={this.handleClick}
