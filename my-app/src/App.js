@@ -77,15 +77,15 @@ class App extends React.Component {
     return (
 
     <div className="container fluid">
-     <Title>INCONCEIVABLE</Title>
+     <Title fluid>INCONCEIVABLE!</Title>
       <Nav>      
         <p><span > Princess Bride Clicky Game!&nbsp;</span></p>
         <p><span >Score: {this.state.myscore}&nbsp;</span>{"       "}&nbsp;
         <span >HighScore: {this.state.highscore}&nbsp;</span> 
         </p>
-        <Alert>Message Here</Alert>
+        <Alert fluid>Message Here</Alert>
       </Nav>
-      <Wrapper>
+      <Wrapper fluid>
         {this.state.friends.map(friend => (
           <FriendCard
             handleClick={this.handleClick}
