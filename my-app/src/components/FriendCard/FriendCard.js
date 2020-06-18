@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./style.css";
 
@@ -8,11 +9,7 @@ function FriendCard(props) {
         <img alt={props.name} src={props.image} />
       </div>
       <div className="content">
-        <ul>
-          <li>
-            <strong></strong>{props.name}
-          </li>
-        </ul>
+      <strong></strong>{props.name}
       </div>
     </div>
   );

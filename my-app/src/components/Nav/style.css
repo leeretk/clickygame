@@ -6,4 +6,9 @@
   color: lightgoldenrodyellow;
   background-color: rgb(15, 49, 15);
   padding-top: 5px;
+  margin: 0%;
+}
+h3 p {
+  margin: 0%;
+  padding: 5px;
 }

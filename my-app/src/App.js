@@ -76,16 +76,15 @@ class App extends React.Component {
   render() {
     return (
 
-    <div className="container">
-     <Title>INCONCEIVABLE
-        <Nav>      
+    <div className="container fluid">
+     <Title>INCONCEIVABLE</Title>
+      <Nav>      
         <p><span > Princess Bride Clicky Game!&nbsp;</span></p>
         <p><span >Score: {this.state.myscore}&nbsp;</span>{"       "}&nbsp;
         <span >HighScore: {this.state.highscore}&nbsp;</span> 
         </p>
         <Alert>Message Here</Alert>
       </Nav>
-      </Title>
       <Wrapper>
         {this.state.friends.map(friend => (
           <FriendCard

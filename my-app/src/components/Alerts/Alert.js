@@ -7,6 +7,7 @@ function Alert(props) {
   return (
     <div className={`alert alertstyle alert-${props.type || "success"}`} role="alert">
       {props.children}
+      {props.message}
     </div>
   );
 }

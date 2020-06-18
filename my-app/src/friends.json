@@ -3,72 +3,84 @@
     "id": 1,
     "name": "Buttercup",
     "image": "./buttercup.PNG",
-    "clicked": false
+    "clicked": false,
+    "message": "Farm boy, polish my horse's saddle. I want to see my face shining in it by morning."
   },
   {
     "id": 2,
     "name": "Inigo Montoya",
     "image": "./iniomontoya.PNG",
-    "clicked": false
+    "clicked": false,
+    "message": " Hello. My name is Inigo Montoya. You killed my father. Prepare to die."
   },
   {
     "id": 3,
     "name": "Miracle Max",
     "image": "./miraclemax.PNG",
-    "clicked": false
+    "clicked": false,
+    "message": "Turns out your friend here is only MOSTLY dead. See, mostly dead is still slightly alive."
   },
   {
     "id": 4,
     "name": "Vizzini",
     "image": "./vizzini.PNG", 
-    "clicked": false
+    "clicked": false,
+    "message": "You've fallen for one of the two classic blunders!"
   },
   {
     "id": 5,
     "name": "Fezzik",
     "image": "./fezzik.PNG", 
-    "clicked": false
+    "clicked": false,
+    "message": "You've been mostly dead all day."
   },
   {
     "id": 6,
     "name": "Count Rugen",
     "image": "./thecount.PNG", 
-    "clicked": false
+    "clicked": false,
+    "message": "Stop saying that!"
   },
   {
     "id": 7,
     "name": "The Clergyman",
     "image": "./theclergyman.PNG", 
-    "clicked": false
+    "clicked": false,
+    "message": "Mawage. Mawage is what bwings us togever today. Mawage that bwessed awangement, that dweam within a dweam."
   },
   {
     "id": 8,
     "name": "The Albino",
     "image": "./thealbino.PNG", 
-    "clicked": false
+    "clicked": false,
+    "message": "Escape from the Pit is impossible."
   },
   {
     "id": 9,
-    "name": "Westly",
+    "name": "Westley",
     "image": "./westley.PNG", 
-    "clicked": false
+    "clicked": false,
+    "message": "As you wish..."
   },
   {
     "id": 10,
     "name": "Prince Humperdinck",
     "image": "./princehumperdinck.PNG", 
-    "clicked": false
+    "clicked": false,
+    "message": "Tyron. You know how much I love watching you work, but I've got my country's 500th anniversary to plan, my wedding to arrange, my wife to murder, and Gilda to blame for it. I'm swamped."
   },
   {
     "id": 11,
     "name": "Valerie",
     "image": "./valerie.PNG", 
-    "clicked": false
+    "clicked": false,
+    "message": "I’m not a witch, I’m your wife!"
   },
   {
     "id": 12,
     "name": "Yellin",
     "image": "./yellin.PNG",
-    "clicked": false
+    "clicked": false,
+    "message": "Oh you mean THIS gate key."
   }
 ]
