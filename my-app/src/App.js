@@ -17,26 +17,28 @@ class App extends React.Component {
     this.setState({ friends: this.shuffleFriends(this.state.friends)});
   };
   
-  resetFriend = friendData => {
-    const resetFriend = friendData.map(friends => ({...friends, clicked: false}));
+  resetFriend = friendArray => {
+    const resetFriend = friendArray.map(friends => ({...friends, clicked: false}));
     return this.shuffleFriends(resetFriend);
   };
 
-  shuffleFriends = friends => {
-    let i = friends.length -1; 
+  shuffleFriends = friendsArray => {
+    let i = friendsArray.length -1; 
     while (i > 0) {
       const j = Math.floor(Math.random() * (i + 1));
-      const temp = friends[i];
-      friends[i] = friends[j];
-      friends[j] = temp;
+      const temp = friendsArray[i];
+      friendsArray[i] = friendsArray[j];
+      friendsArray[j] = temp;
       i--;
     }
-    return friends;
+    return friendsArray;
   }
 
   handleClick = id => {
     let correctGuess = false;
+
     const newClick = this.state.friends.map(friends => {
+
       const newFriend = { ...friends };
       if (newFriend.id === id) {
         if (!newFriend.clicked) {
