@@ -40,6 +40,7 @@ class App extends React.Component {
     const newClick = this.state.friends.map(friends => {
 
       const newFriend = { ...friends };
+      
       if (newFriend.id === id) {
         if (!newFriend.clicked) {
           newFriend.clicked = true;
