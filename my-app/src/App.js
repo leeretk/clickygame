@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper/Wrapper";
 import Title from "./components/Title/Title";
 import Nav from "./components/Nav/Nav";
 import Alert from "./components/Alerts/Alert";
+import Quote from "./components/Quote/Quote";
 import friends from "./friends.json";
 
 class App extends React.Component {
@@ -85,8 +86,9 @@ class App extends React.Component {
         <p><span >MyScore: {this.state.myscore}&nbsp;</span>{"       "}&nbsp;
         <span >HighScore: {this.state.highscore}&nbsp;</span> 
         </p>
-        <Alert fluid>Message Here</Alert>
       </Nav>
+      <Alert className="alert"></Alert>
+      <Quote className="quote" handleClick={this.handleClick}></Quote>
       <Wrapper fluid>
         {this.state.friends.map(friend => (
           <FriendCard

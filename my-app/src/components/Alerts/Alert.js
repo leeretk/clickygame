@@ -10,7 +10,7 @@ class Alert extends Component {
   componentDidUpdate({ myScore, highScore }, prevState) {
 
     if (myScore === 0 && highScore === 0) {  
-      this.message ="default";
+      this.message ="";
     } else if (myScore === 0 && highScore > 0) {
       this.message = "incorrect";
     } else if (myScore === 12) {
