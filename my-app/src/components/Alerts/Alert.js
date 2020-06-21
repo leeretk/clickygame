@@ -38,7 +38,7 @@ class Alert extends Component {
         
   render() {
     return (
-        <h1 className = {this.message}>
+        <h1 className = "alertstyle">
               {this.renderMessage}
           </h1>
       );

@@ -3,7 +3,7 @@ import FriendCard from "./components/FriendCard/FriendCard";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Title from "./components/Title/Title";
 import Nav from "./components/Nav/Nav";
-import Alert from "./components/Alerts/Alert";
+// import Alert from "./components/Alerts/Alert";
 import Quote from "./components/Quote/Quote";
 import friends from "./friends.json";
 
@@ -38,7 +38,7 @@ class App extends React.Component {
   };
 
   handleCorrect = correctClick => {
-    console.log("Correct Click" + this.state.message + this.state.quote);
+    console.log("Correct Click" + this.state.quote);
     const { highscore, myscore } = this.state;
     const myNewScore = myscore + 1;
     const newHighScore = Math.max(myNewScore, highscore);
@@ -47,6 +47,8 @@ class App extends React.Component {
         friends: this.shuffleFriends(correctClick),
         myscore: myNewScore,
         highscore: newHighScore
+        //show alert here?
+        //show quote here?
     });
   };
 
@@ -56,6 +58,7 @@ class App extends React.Component {
           friends: this.resetFriend(incorrectClick),
           myscore: 0,
       });
+
   };
 
   handleClick = id => {
@@ -76,6 +79,46 @@ class App extends React.Component {
           : this.handleIncorrect(friendClicked);
       };
   // Map over this.state.friends and render a FriendCard component for each friend object
+
+  handleAlert  = 
+
+  
+  if (myScore === 0 && highScore === 0) {  
+    this.message ="";
+  } else if (myScore === 0 && highScore > 0) {
+    this.message = "incorrect";
+  } else if (myScore === 12) {
+    this.message = "winner";
+  } else {
+    this.message = "correct";
+  }
+  if (myScore !== this.props.myScore || this.state.message !== this.message ) {
+    this.setState({ message: this.message});     
+  }
+};
+
+  renderMessage = () => {
+  switch (this.state.message) {
+      case "correct":
+          return "You Guessed Correctly!"
+      case "incorrect": 
+          return "You guessed Incorrectly"
+      case "winner":
+          return "You Win, click to play again!"
+      default:
+          return "Click an image to Begin!"
+  }
+}
+      
+render() {
+  return (
+      <h1 className = "alertstyle">
+            {this.renderMessage}
+        </h1>
+    );
+}
+
+
   render() {
     return (
 
@@ -87,8 +130,7 @@ class App extends React.Component {
         <span >HighScore: {this.state.highscore}&nbsp;</span> 
         </p>
       </Nav>
-      <Alert className="alert"></Alert>
-      <Quote className="quote" handleClick={this.handleClick}></Quote>
+      <Quote className="quote" handleClick={this.handleClick}>{this.state.quote}</Quote>
       <Wrapper fluid>
         {this.state.friends.map(friend => (
           <FriendCard
