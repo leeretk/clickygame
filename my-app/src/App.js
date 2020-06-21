@@ -91,10 +91,18 @@ render() {
         <p><span >MyScore: {this.state.myscore}&nbsp;</span>{"       "}&nbsp;
         <span >HighScore: {this.state.highscore}&nbsp;</span> 
         </p>
-        <p className = "alertstyle">{this.state.message}</p>       
+        <p className = "alertstyle">{this.state.message}</p>
+        {this.state.friends.map(friend => (
+      <Quote 
+            handleClick={this.handleClick}
+            quote={friend.quote}
+          />
+      ))};
       </Nav>
-      <Quote>Quote:</Quote>
-      <Wrapper fluid>
+      
+
+
+      <Wrapper fluid> 
         {this.state.friends.map(friend => (
           <FriendCard
             handleClick={this.handleClick}

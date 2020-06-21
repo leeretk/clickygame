@@ -10,6 +10,7 @@ function FriendCard(props) {
       </div>
       <div className="content">
       <strong></strong>{props.name}
+      <strong></strong>{props.quote}
       </div>
     </div>
   );
