@@ -38,21 +38,31 @@ class App extends React.Component {
 
   handleClick = id => {
     let correct = false;
+
     //clone friends.json array and map to change clicked to true
-    const friendClicked = this.state.friends.map(friends => {
+    const friendClicked = this.state.friends.map(friends => {     
       const newFriendArray = { ...friends };
-         if (newFriendArray.id === id) {
+               if (newFriendArray.id === id) {
             if (!newFriendArray.clicked) {
               newFriendArray.clicked = true;
               correct = true;
-            }
+            } 
           }
           return newFriendArray;
-        });   //use conditional opertor to evalute if correct is true and then perform an action (ternary operator?).
+        });   
+        
+        
+        //use conditional opertor to evalute if correct is true and then perform an action (ternary operator?).
         correct
           ? this.handleCorrect(friendClicked)
           : this.handleIncorrect(friendClicked);
       };
+
+  handleQuote = id => {
+
+
+  };
+
 
   handleCorrect = correctClick => {
     console.log("Correct Click");
@@ -92,15 +102,18 @@ render() {
         <span >HighScore: {this.state.highscore}&nbsp;</span> 
         </p>
         <p className = "alertstyle">{this.state.message}</p>
-        {this.state.friends.map(friend => (
+        
+
+      </Nav>
+  
+      <div>
+      {this.state.friends.map(friend => (
       <Quote 
             handleClick={this.handleClick}
-            quote={friend.quote}
           />
       ))};
-      </Nav>
-      
-
+    
+      </div>
 
       <Wrapper fluid> 
         {this.state.friends.map(friend => (
