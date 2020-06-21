@@ -3,6 +3,7 @@ import FriendCard from "./components/FriendCard/FriendCard";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Title from "./components/Title/Title";
 import Nav from "./components/Nav/Nav";
+import Quote from "./components/Quote/Quote";
 import friends from "./friends.json";
 
 class App extends React.Component {
@@ -12,7 +13,6 @@ class App extends React.Component {
     highscore:0,
     clicked:[],
     message:"To play the game click an image but only click it once!",
-    quote:"",
   };
 
   componentDidMount() {
@@ -38,7 +38,6 @@ class App extends React.Component {
 
   handleClick = id => {
     let correct = false;
-    
     //clone friends.json array and map to change clicked to true
     const friendClicked = this.state.friends.map(friends => {
       const newFriendArray = { ...friends };
@@ -49,7 +48,7 @@ class App extends React.Component {
             }
           }
           return newFriendArray;
-        });
+        });   //use conditional opertor to evalute if correct is true and then perform an action (ternary operator?).
         correct
           ? this.handleCorrect(friendClicked)
           : this.handleIncorrect(friendClicked);
@@ -57,33 +56,27 @@ class App extends React.Component {
 
   handleCorrect = correctClick => {
     console.log("Correct Click");
-    const { highscore, myscore, quote } = this.state;
+    
+    const { highscore, myscore } = this.state;
     const myNewScore = myscore + 1;
     const newHighScore = Math.max(myNewScore, highscore);
-    const newQuote = quote;
 
     this.setState({
         friends: this.shuffleFriends(correctClick),
         myscore: myNewScore,
         highscore: newHighScore,
         message: "Correct Click",
-        quote: newQuote,
     });
-    console.log(this.state.quote)
   };
 
   handleIncorrect = incorrectClick => {
     console.log("Sorry, you already clicked that one!");
-      const { quote } = this.state;  
-      const newQuotes = quote;
 
       this.setState({
           friends: this.resetFriend(incorrectClick),
           myscore: 0,
           message: "Sorry, you already clicked that one!",
-          quote: newQuotes,
       });
-      console.log(this.state.quote)
     };
 
   // Map over this.state.friends and render a FriendCard component for each friend object
@@ -98,9 +91,9 @@ render() {
         <p><span >MyScore: {this.state.myscore}&nbsp;</span>{"       "}&nbsp;
         <span >HighScore: {this.state.highscore}&nbsp;</span> 
         </p>
-        <p className = "alertstyle">{this.state.message}</p>
-        <p className = "alertstyle">{this.state.quote}</p>
+        <p className = "alertstyle">{this.state.message}</p>       
       </Nav>
+      <Quote>Quote:</Quote>
       <Wrapper fluid>
         {this.state.friends.map(friend => (
           <FriendCard
