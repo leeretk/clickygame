@@ -4,83 +4,83 @@
     "name": "Buttercup",
     "image": "./buttercup.PNG",
     "clicked": false,
-    "message": "Farm boy, polish my horse's saddle. I want to see my face shining in it by morning."
+    "quote": "Farm boy, polish my horse's saddle. I want to see my face shining in it by morning."
   },
   {
     "id": 2,
     "name": "Inigo Montoya",
     "image": "./iniomontoya.PNG",
     "clicked": false,
-    "message": " Hello. My name is Inigo Montoya. You killed my father. Prepare to die."
+    "quote": " Hello. My name is Inigo Montoya. You killed my father. Prepare to die."
   },
   {
     "id": 3,
     "name": "Miracle Max",
     "image": "./miraclemax.PNG",
     "clicked": false,
-    "message": "Turns out your friend here is only MOSTLY dead. See, mostly dead is still slightly alive."
+    "quote": "Turns out your friend here is only MOSTLY dead. See, mostly dead is still slightly alive."
   },
   {
     "id": 4,
     "name": "Vizzini",
     "image": "./vizzini.PNG", 
     "clicked": false,
-    "message": "You've fallen for one of the two classic blunders!"
+    "quote": "You've fallen for one of the two classic blunders!"
   },
   {
     "id": 5,
     "name": "Fezzik",
     "image": "./fezzik.PNG", 
     "clicked": false,
-    "message": "You've been mostly dead all day."
+    "quote": "You've been mostly dead all day."
   },
   {
     "id": 6,
     "name": "Count Rugen",
     "image": "./thecount.PNG", 
     "clicked": false,
-    "message": "Stop saying that!"
+    "quote": "Stop saying that!"
   },
   {
     "id": 7,
     "name": "The Clergyman",
     "image": "./theclergyman.PNG", 
     "clicked": false,
-    "message": "Mawage. Mawage is what bwings us togever today. Mawage that bwessed awangement, that dweam within a dweam."
+    "quote": "Mawage. Mawage is what bwings us togever today. Mawage that bwessed awangement, that dweam within a dweam."
   },
   {
     "id": 8,
     "name": "The Albino",
     "image": "./thealbino.PNG", 
     "clicked": false,
-    "message": "Escape from the Pit is impossible."
+    "quote": "Escape from the Pit is impossible."
   },
   {
     "id": 9,
     "name": "Westley",
     "image": "./westley.PNG", 
     "clicked": false,
-    "message": "As you wish..."
+    "quote": "As you wish..."
   },
   {
     "id": 10,
     "name": "Prince Humperdinck",
     "image": "./princehumperdinck.PNG", 
     "clicked": false,
-    "message": "Tyron. You know how much I love watching you work, but I've got my country's 500th anniversary to plan, my wedding to arrange, my wife to murder, and Gilda to blame for it. I'm swamped."
+    "quote": "Tyron. You know how much I love watching you work, but I've got my country's 500th anniversary to plan, my wedding to arrange, my wife to murder, and Gilda to blame for it. I'm swamped."
   },
   {
     "id": 11,
     "name": "Valerie",
     "image": "./valerie.PNG", 
     "clicked": false,
-    "message": "I’m not a witch, I’m your wife! Liar Liar Liarrr!"
+    "quote": "I’m not a witch, I’m your wife! Liar Liar Liarrr!"
   },
   {
     "id": 12,
     "name": "Yellin",
     "image": "./yellin.PNG",
     "clicked": false,
-    "message": "Oh you mean THIS gate key."
+    "quote": "Oh you mean THIS gate key."
   }
 ]
