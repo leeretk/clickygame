@@ -49,7 +49,7 @@ class App extends React.Component {
           }
           return newFriendArray;
         });
-        //use conditional operator to evalute if correct is true and then perform an action (ternary operator?).
+        //use conditional operator to evalute if correct is true and then perform an action (ternary operator).
         correct
           ? this.handleCorrect(friendClicked)
           : this.handleIncorrect(friendClicked);
@@ -58,7 +58,7 @@ class App extends React.Component {
   handleCorrect = correctClick => {
     console.log("Correct Click" );
     
-    const { highscore, myscore} = this.state;
+    const { highscore, myscore } = this.state;
     const myNewScore = myscore + 1;
     const newHighScore = Math.max(myNewScore, highscore);
 

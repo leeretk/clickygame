@@ -1,11 +1,11 @@
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+/* } */
 * {
   box-sizing: border-box;
   font-family: sans-serif;
-}
+} 
 html, body, #root {
   padding: 0;
   margin: 0;
@@ -18,13 +18,12 @@ img {
 body {
   background-image: url(./components/Images/fullbackground.PNG);
   background-size: cover;
-  background-repeat: no-repeat
 }
 .container {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   background-color: goldenrod;
 }
 .alertstyle {
