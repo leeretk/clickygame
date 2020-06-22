@@ -2,7 +2,7 @@
 
 ## LIVE LINK: 
 
-![]https://github.com/leeretk/clickygame/blob/master/public/homepage.PNG
+![](https://github.com/leeretk/clickygame/blob/master/public/homepage.PNG)
 
 
 
