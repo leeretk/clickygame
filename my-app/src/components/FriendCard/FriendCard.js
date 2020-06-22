@@ -8,10 +8,8 @@ function FriendCard(props) {
       <div className="img-container">
         <img alt={props.name} src={props.image} />
       </div>
-      <div className="content">
-      <strong></strong>{props.name}
-      <strong></strong>{props.quote}
-      </div>
+      <div className="content"><strong></strong>{props.name}</div>
+      <div className="quotestyle">{props.quote}</div>
     </div>
   );
 }

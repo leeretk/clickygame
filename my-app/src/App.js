@@ -3,7 +3,6 @@ import FriendCard from "./components/FriendCard/FriendCard";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Title from "./components/Title/Title";
 import Nav from "./components/Nav/Nav";
-import Quote from "./components/Quote/Quote";
 import friends from "./friends.json";
 
 class App extends React.Component {
@@ -49,25 +48,17 @@ class App extends React.Component {
             } 
           }
           return newFriendArray;
-        });   
-        
-        
-        //use conditional opertor to evalute if correct is true and then perform an action (ternary operator?).
+        });
+        //use conditional operator to evalute if correct is true and then perform an action (ternary operator?).
         correct
           ? this.handleCorrect(friendClicked)
           : this.handleIncorrect(friendClicked);
-      };
-
-  handleQuote = id => {
-
-
   };
 
-
   handleCorrect = correctClick => {
-    console.log("Correct Click");
+    console.log("Correct Click" );
     
-    const { highscore, myscore } = this.state;
+    const { highscore, myscore} = this.state;
     const myNewScore = myscore + 1;
     const newHighScore = Math.max(myNewScore, highscore);
 
@@ -102,19 +93,7 @@ render() {
         <span >HighScore: {this.state.highscore}&nbsp;</span> 
         </p>
         <p className = "alertstyle">{this.state.message}</p>
-        
-
       </Nav>
-  
-      <div>
-      {this.state.friends.map(friend => (
-      <Quote 
-            handleClick={this.handleClick}
-          />
-      ))};
-    
-      </div>
-
       <Wrapper fluid> 
         {this.state.friends.map(friend => (
           <FriendCard
@@ -123,6 +102,7 @@ render() {
             key={friend.id}
             name={friend.name}
             image={friend.image}
+            quote={friend.quote}
           />
         ))}
       </Wrapper>

@@ -1,22 +1,22 @@
 .card {
   background: lightgoldenrodyellow;
   border-radius: 2px;
-  height: 325px;
-  margin: 10px;
+  height:450px;
+  margin: 20px;
   position: relative;
-  width: 325px;
+  width: 300px;
   box-shadow: 0 20px 40px black;
   text-align: center;
+  margin-left: 2px;
+  margin-right:2px;
 }
 .card > .img-container {
-  height: 80%;
   overflow: hidden;
   text-align: center;
-  margin: 10px;
 }
 .card > .img-container > img {
+  margin: 10px;
   width: 90%;
-  margin: 5px;
 }
 .card > .content {
   font-size: 30px;

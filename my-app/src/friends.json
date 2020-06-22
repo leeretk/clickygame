@@ -11,7 +11,7 @@
     "name": "Inigo Montoya",
     "image": "./iniomontoya.PNG",
     "clicked": false,
-    "quote": " Hello. My name is Inigo Montoya. You killed my father. Prepare to die."
+    "quote": "Hello. My name is Inigo Montoya. You killed my father. Prepare to die."
   },
   {
     "id": 3,
@@ -46,7 +46,7 @@
     "name": "The Clergyman",
     "image": "./theclergyman.PNG", 
     "clicked": false,
-    "quote": "Mawage. Mawage is what bwings us togever today. Mawage that bwessed awangement, that dweam within a dweam."
+    "quote": "Mawage. Mawage is what bwings us togever today. Mawage that bwessed awangement..."
   },
   {
     "id": 8,
@@ -67,7 +67,7 @@
     "name": "Prince Humperdinck",
     "image": "./princehumperdinck.PNG", 
     "clicked": false,
-    "quote": "Tyron. You know how much I love watching you work, but I've got my country's 500th anniversary to plan, my wedding to arrange, my wife to murder, and Gilda to blame for it. I'm swamped."
+    "quote": "I said I would not hurt him. But I never for a moment said he would not suffer pain."
   },
   {
     "id": 11,
