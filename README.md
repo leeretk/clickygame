@@ -1,6 +1,6 @@
 # The Princess Bride Clicky Game
 
-## LIVE LINK: https://princessbride-clicky-game.herokuapp.com/ (not functional yet)
+## LIVE LINK: https://damp-depths-81632.herokuapp.com/
 
 ## GIT PAGES: https://leeretk.github.io/clickygame/
 
