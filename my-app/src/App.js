@@ -88,7 +88,7 @@ render() {
     <div className="container fluid">
      <Title fluid>INCONCEIVABLE!</Title>
       <Nav>      
-        <p><span > Princess Bride Clicky Game!&nbsp;</span></p>
+        <p><span > The Princess Bride -- Clicky Game!&nbsp;</span></p>
         <p><span >MyScore: {this.state.myscore}&nbsp;</span>{"       "}&nbsp;
         <span >HighScore: {this.state.highscore}&nbsp;</span> 
         </p>
