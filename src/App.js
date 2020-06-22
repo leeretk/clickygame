@@ -66,12 +66,12 @@ class App extends React.Component {
         friends: this.shuffleFriends(correctClick),
         myscore: myNewScore,
         highscore: newHighScore,
-        message: "Correct Click",
+        message: "Correct Click -- Keep going!",
     });
   };
 
   handleIncorrect = incorrectClick => {
-    console.log("Sorry, you already clicked that one!");
+    console.log("Sorry, you already clicked that one! Please try again.");
 
       this.setState({
           friends: this.resetFriend(incorrectClick),
