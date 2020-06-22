@@ -1,6 +1,8 @@
 # The Princess Bride Clicky Game
 
-## LIVE LINK: https://leeretk.github.io/clickygame/
+## LIVE LINK: https://princessbride-clicky-game.herokuapp.com/
+
+## GIT PAGES: https://leeretk.github.io/clickygame/
 
 ![](https://github.com/leeretk/clickygame/blob/master/public/homepage.PNG)
 
